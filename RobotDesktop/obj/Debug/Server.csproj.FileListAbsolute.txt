@@ -1,0 +1,6 @@
+c:\work\Robot_project\RobotDesktop\RobotDesktop\bin\Debug\RobotDesktop.exe.config
+c:\work\Robot_project\RobotDesktop\RobotDesktop\bin\Debug\RobotDesktop.exe
+c:\work\Robot_project\RobotDesktop\RobotDesktop\bin\Debug\RobotDesktop.pdb
+c:\work\Robot_project\RobotDesktop\RobotDesktop\obj\Debug\Server.csprojAssemblyReference.cache
+c:\work\Robot_project\RobotDesktop\RobotDesktop\obj\Debug\RobotDesktop.exe
+c:\work\Robot_project\RobotDesktop\RobotDesktop\obj\Debug\RobotDesktop.pdb
