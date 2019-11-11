@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace Server
 {
-    [Route("/hello/{Name}")]
-    public class Hello : IReturn<HelloResponse>
+    [Route("/data/{Values}")]
+    public class Data : IReturn<DataResponse>
     {
-        public string Name { get; set; }
+        public int Id { get; set; }
+        public string Values { get; set; }
     }
 
-    public class HelloResponse
+    public class DataResponse
     {
         public string Result { get; set; }
     }

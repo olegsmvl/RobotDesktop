@@ -11,7 +11,7 @@ namespace Server
     public class AppHost : AppSelfHostBase
     {
         public AppHost()
-          : base("HttpListener Self-Host", typeof(MyServices).Assembly) { }
+          : base("HttpListener Self-Host", typeof(DataService).Assembly) { }
 
         public override void Configure(Funq.Container container) { }
     }

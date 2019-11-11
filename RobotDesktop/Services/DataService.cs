@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Server
 {
-    public class MyServices : Service
+    public class DataService : Service
     {
-        public object Any(Hello request)
+        public object Any(Data request)
         {
-            return new HelloResponse { Result = $"Hello, {request.Name}!" };
+            return new DataResponse { Result = $"Hello, {request.Values}!" };
         }
     }
 }
