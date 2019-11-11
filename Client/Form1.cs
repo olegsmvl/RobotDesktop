@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
 
 namespace Client
 {
@@ -19,7 +20,8 @@ namespace Client
 
         private void buttonRequest_Click(object sender, EventArgs e)
         {
-
+            var request = WebRequest.Create("http://localhost:1337/data/test");
+            var responce = request.GetResponse();
         }
     }
 }
