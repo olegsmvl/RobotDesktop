@@ -11,7 +11,6 @@ using System.Net;
 using Server;
 using Newtonsoft.Json;
 using System.IO;
-using System.Text;
 
 namespace Client
 {

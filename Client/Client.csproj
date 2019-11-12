@@ -85,9 +85,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RobotDesktop\Server.csproj">
-      <Project>{3e5cb7b7-ac02-493c-95b9-9fe5e9a7c11d}</Project>
-      <Name>Server</Name>
+    <ProjectReference Include="..\Dto\Dto.csproj">
+      <Project>{986563a2-e3eb-492f-b306-324f15350e1e}</Project>
+      <Name>Dto</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Funq;
 using ServiceStack;
+using ServiceStack.OrmLite;
+using ServiceStack.Data;
 
 namespace Server
 {
@@ -13,6 +15,12 @@ namespace Server
         public AppHost()
           : base("HttpListener Self-Host", typeof(DataService).Assembly) { }
 
-        public override void Configure(Funq.Container container) { }
+        public override void Configure(Funq.Container container) 
+        {
+            SetConfig(new HostConfig { DebugMode = true });
+
+            container.Register<IDbConnectionFactory>(c =>
+            new OrmLiteConnectionFactory(":memory:", SqliteDialect.Provider));
+        }
     }
 }
