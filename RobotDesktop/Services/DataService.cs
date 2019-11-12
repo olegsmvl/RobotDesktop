@@ -13,5 +13,10 @@ namespace Server
         {
             return new DataResponse { Result = $"Hello, {request.Values}!" };
         }
+
+        public object Post(Data request)
+        {
+            return new DataResponse { Result = $"Hello, {request.Values}!" };
+        }
     }
 }

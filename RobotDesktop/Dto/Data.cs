@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Server
 {
-    [Route("/data/{Values}")]
+    [Route("/data")]
     public class Data : IReturn<DataResponse>
     {
         public int Id { get; set; }
