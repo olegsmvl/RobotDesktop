@@ -1,0 +1,59 @@
+[33mcommit b716dc6e5053c72ebeae27d48f16303510c78c05[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: olegsmvl <33567178+olegsmvl@users.noreply.github.com>
+Date:   Sat Dec 14 13:50:32 2019 +0300
+
+    add task
+
+[33mcommit 818369bc947d449d3bc503b512ba53d14eaf2c9a[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: olegsmvl <33567178+olegsmvl@users.noreply.github.com>
+Date:   Sat Dec 14 12:47:48 2019 +0300
+
+    add tcpClient
+
+[33mcommit 9f35b3146c91d127c2573a888d0ede5556029257[m
+Author: olegsmvl <olegsmvl2@mail.ru>
+Date:   Tue Nov 12 15:09:45 2019 +0300
+
+    add DB
+
+[33mcommit 57d7ebe1f47e958a5518d4284fb3afc24dc4358f[m
+Author: olegsmvl <olegsmvl2@mail.ru>
+Date:   Tue Nov 12 13:46:41 2019 +0300
+
+    add post service
+
+[33mcommit 05b2343b3e13a885668889577dcc38c66bb5ad28[m
+Author: olegsmvl <olegsmvl2@mail.ru>
+Date:   Mon Nov 11 18:54:23 2019 +0300
+
+    add client with request
+
+[33mcommit c2188fc6e3cfd578e55cba3196504a53473a474e[m
+Author: olegsmvl <olegsmvl2@mail.ru>
+Date:   Mon Nov 11 18:33:56 2019 +0300
+
+    fix gitignore
+
+[33mcommit 298a3e584d62576fe52061b5d86119fdae378423[m
+Author: olegsmvl <olegsmvl2@mail.ru>
+Date:   Mon Nov 11 18:17:38 2019 +0300
+
+    upd
+
+[33mcommit d54a559c66038ae77914f1d09ed95dc74a7b0e16[m
+Author: olegsmvl <33567178+olegsmvl@users.noreply.github.com>
+Date:   Sat Nov 2 10:26:15 2019 +0300
+
+    add service stack
+
+[33mcommit fce163ccd9201bd54059f0395206ddc3b52dd209[m
+Author: olegsmvl <33567178+olegsmvl@users.noreply.github.com>
+Date:   Sat Nov 2 08:07:22 2019 +0300
+
+    c sharp
+
+[33mcommit 6462cfa3caeaa851b06260de8762c1379b30070b[m
+Author: olegsmvl <33567178+olegsmvl@users.noreply.github.com>
+Date:   Sat Nov 2 07:49:17 2019 +0300
+
+    init commit
