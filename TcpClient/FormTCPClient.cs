@@ -23,14 +23,27 @@ namespace TcpClientProject
 
         private void FormTCPClient_Shown(object sender, EventArgs e)
         {
-            TcpClient tcpClient = new TcpClient();
-            tcpClient.Connect("192.168.1.94", 5051);
-            var stream = tcpClient.GetStream();
-            byte[] data = new byte[256];
-            int bytes = stream.Read(data, 0, data.Length);
-            Message = Encoding.UTF8.GetString(data, 0, bytes);
+            Task task = Task.Run(() => {
+                TcpClient tcpClient = new TcpClient();
+                tcpClient.Connect("192.168.1.94", 5051);
+                var stream = tcpClient.GetStream();
 
-            tbData.Text += Message;
+                while (true)
+                {
+                    if (stream.DataAvailable)
+                    {
+                        byte[] data = new byte[256];
+                        int bytes = stream.Read(data, 0, data.Length);
+                        Message += Encoding.UTF8.GetString(data, 0, bytes);
+                        tbData.Invoke(new Action<string>((s) => tbData.Text = s), Message);
+                    }
+                }
+            });
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tbData.Text = Message;
         }
     }
 }
