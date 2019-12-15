@@ -16,6 +16,7 @@ namespace TcpClientProject
     public partial class FormTCPClient : Form
     {
         private string Message = string.Empty;
+        NetworkStream stream;
         public FormTCPClient()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace TcpClientProject
             Task task = Task.Run(() => {
                 TcpClient tcpClient = new TcpClient();
                 tcpClient.Connect("192.168.1.94", 5051);
-                var stream = tcpClient.GetStream();
+                stream = tcpClient.GetStream();
 
                 while (true)
                 {
@@ -55,7 +56,14 @@ namespace TcpClientProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            tbData.Text = Message;
+            byte[] sendBytes = Encoding.UTF8.GetBytes("{\"value\":1}");
+            stream.Write(sendBytes, 0, sendBytes.Length);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            byte[] sendBytes = Encoding.UTF8.GetBytes("{\"value\":0}");
+            stream.Write(sendBytes, 0, sendBytes.Length);
         }
     }
 }

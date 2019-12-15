@@ -33,6 +33,7 @@
             this.labelX = new System.Windows.Forms.Label();
             this.labelY = new System.Windows.Forms.Label();
             this.labelZ = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbData
@@ -80,11 +81,22 @@
             this.labelZ.TabIndex = 4;
             this.labelZ.Text = "Z";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(879, 208);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(107, 52);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FormTCPClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1047, 726);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.labelZ);
             this.Controls.Add(this.labelY);
             this.Controls.Add(this.labelX);
@@ -105,6 +117,7 @@
         private System.Windows.Forms.Label labelX;
         private System.Windows.Forms.Label labelY;
         private System.Windows.Forms.Label labelZ;
+        private System.Windows.Forms.Button button2;
     }
 }
 
