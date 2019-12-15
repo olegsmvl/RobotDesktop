@@ -56,13 +56,15 @@ namespace TcpClientProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            byte[] sendBytes = Encoding.UTF8.GetBytes("{\"value\":1}");
+            var command = new Command { command = CommandTypes.lighton };
+            byte[] sendBytes = Encoding.UTF8.GetBytes("{\"value\":\"lighton\"}");
             SendBytes(sendBytes);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            byte[] sendBytes = Encoding.UTF8.GetBytes("{\"value\":0}");
+            var command = new Command { command = CommandTypes.lightoff };
+            byte[] sendBytes = Encoding.UTF8.GetBytes("{\"value\":\"lightoff\"}");
             SendBytes(sendBytes);
         }
 
