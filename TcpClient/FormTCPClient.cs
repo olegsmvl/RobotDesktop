@@ -46,7 +46,9 @@ namespace TcpClientProject
                             labelY.Invoke(new Action<string>((s => labelY.Text = s)), sensor.y.ToString());
                             labelZ.Invoke(new Action<string>((s => labelZ.Text = s)), sensor.z.ToString());
                         }
-                        catch { }
+                        catch {
+                            tbMessage.Invoke(new Action<string>(s => tbMessage.Text = s), Message);
+                        }
 
                         tbData.Invoke(new Action<string>((s) => tbData.Text = s), Message);
                     }
@@ -56,16 +58,12 @@ namespace TcpClientProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var command = new Command { command = CommandTypes.lighton };
-            byte[] sendBytes = Encoding.UTF8.GetBytes("{\"value\":\"lighton\"}");
-            SendBytes(sendBytes);
+            SendCommand(CommandTypes.lighton);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var command = new Command { command = CommandTypes.lightoff };
-            byte[] sendBytes = Encoding.UTF8.GetBytes("{\"value\":\"lightoff\"}");
-            SendBytes(sendBytes);
+            SendCommand(CommandTypes.lightoff);
         }
 
         private void SendBytes(byte[] sendBytes)
@@ -75,6 +73,13 @@ namespace TcpClientProject
                 stream.Write(sendBytes, 0, sendBytes.Length);
             }
             catch { }
+        }
+
+        private void SendCommand(CommandTypes commandType)
+        {
+            var command = new Command { command = commandType };
+            byte[] sendBytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(command));
+            SendBytes(sendBytes);
         }
     }
 }
