@@ -57,13 +57,22 @@ namespace TcpClientProject
         private void button1_Click(object sender, EventArgs e)
         {
             byte[] sendBytes = Encoding.UTF8.GetBytes("{\"value\":1}");
-            stream.Write(sendBytes, 0, sendBytes.Length);
+            SendBytes(sendBytes);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             byte[] sendBytes = Encoding.UTF8.GetBytes("{\"value\":0}");
-            stream.Write(sendBytes, 0, sendBytes.Length);
+            SendBytes(sendBytes);
+        }
+
+        private void SendBytes(byte[] sendBytes)
+        {
+            try
+            {
+                stream.Write(sendBytes, 0, sendBytes.Length);
+            }
+            catch { }
         }
     }
 }
