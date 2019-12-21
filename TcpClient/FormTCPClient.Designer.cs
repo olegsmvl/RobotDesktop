@@ -35,6 +35,8 @@
             this.labelZ = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.tbMessage = new System.Windows.Forms.TextBox();
+            this.buttonForward = new System.Windows.Forms.Button();
+            this.buttonStop = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbData
@@ -49,7 +51,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(773, 490);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 53);
+            this.button1.Size = new System.Drawing.Size(190, 53);
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -86,7 +88,7 @@
             // 
             this.button2.Location = new System.Drawing.Point(773, 606);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 52);
+            this.button2.Size = new System.Drawing.Size(190, 52);
             this.button2.TabIndex = 5;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -100,11 +102,33 @@
             this.tbMessage.Size = new System.Drawing.Size(601, 385);
             this.tbMessage.TabIndex = 6;
             // 
+            // buttonForward
+            // 
+            this.buttonForward.Location = new System.Drawing.Point(1109, 495);
+            this.buttonForward.Name = "buttonForward";
+            this.buttonForward.Size = new System.Drawing.Size(124, 48);
+            this.buttonForward.TabIndex = 7;
+            this.buttonForward.Text = "forward";
+            this.buttonForward.UseVisualStyleBackColor = true;
+            this.buttonForward.Click += new System.EventHandler(this.buttonForward_Click);
+            // 
+            // buttonStop
+            // 
+            this.buttonStop.Location = new System.Drawing.Point(1090, 606);
+            this.buttonStop.Name = "buttonStop";
+            this.buttonStop.Size = new System.Drawing.Size(143, 52);
+            this.buttonStop.TabIndex = 8;
+            this.buttonStop.Text = "stop";
+            this.buttonStop.UseVisualStyleBackColor = true;
+            this.buttonStop.Click += new System.EventHandler(this.buttonStop_Click);
+            // 
             // FormTCPClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1703, 775);
+            this.Controls.Add(this.buttonStop);
+            this.Controls.Add(this.buttonForward);
             this.Controls.Add(this.tbMessage);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.labelZ);
@@ -129,6 +153,8 @@
         private System.Windows.Forms.Label labelZ;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox tbMessage;
+        private System.Windows.Forms.Button buttonForward;
+        private System.Windows.Forms.Button buttonStop;
     }
 }
 

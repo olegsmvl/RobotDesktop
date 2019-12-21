@@ -9,6 +9,8 @@ namespace Dto
     public enum CommandTypes
     {
         lighton,
-        lightoff
+        lightoff,
+        forward,
+        stop
     }
 }

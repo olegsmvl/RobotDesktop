@@ -81,5 +81,15 @@ namespace TcpClientProject
             byte[] sendBytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(command));
             SendBytes(sendBytes);
         }
+
+        private void buttonForward_Click(object sender, EventArgs e)
+        {
+            SendCommand(CommandTypes.forward);
+        }
+
+        private void buttonStop_Click(object sender, EventArgs e)
+        {
+            SendCommand(CommandTypes.stop);
+        }
     }
 }
