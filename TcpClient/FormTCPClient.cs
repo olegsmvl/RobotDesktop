@@ -91,5 +91,20 @@ namespace TcpClientProject
         {
             SendCommand(CommandTypes.stop);
         }
+
+        private void buttonBackward_Click(object sender, EventArgs e)
+        {
+            SendCommand(CommandTypes.backward);
+        }
+
+        private void buttonLeft_Click(object sender, EventArgs e)
+        {
+            SendCommand(CommandTypes.left);
+        }
+
+        private void buttonRight_Click(object sender, EventArgs e)
+        {
+            SendCommand(CommandTypes.right);
+        }
     }
 }

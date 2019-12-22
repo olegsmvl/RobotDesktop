@@ -11,6 +11,9 @@ namespace Dto
         lighton,
         lightoff,
         forward,
+        backward,
+        left,
+        right,
         stop
     }
 }

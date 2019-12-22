@@ -37,6 +37,10 @@
             this.tbMessage = new System.Windows.Forms.TextBox();
             this.buttonForward = new System.Windows.Forms.Button();
             this.buttonStop = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.buttonBackward = new System.Windows.Forms.Button();
+            this.buttonLeft = new System.Windows.Forms.Button();
+            this.buttonRight = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbData
@@ -86,7 +90,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(773, 606);
+            this.button2.Location = new System.Drawing.Point(773, 584);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(190, 52);
             this.button2.TabIndex = 5;
@@ -104,9 +108,9 @@
             // 
             // buttonForward
             // 
-            this.buttonForward.Location = new System.Drawing.Point(1109, 495);
+            this.buttonForward.Location = new System.Drawing.Point(1259, 444);
             this.buttonForward.Name = "buttonForward";
-            this.buttonForward.Size = new System.Drawing.Size(124, 48);
+            this.buttonForward.Size = new System.Drawing.Size(150, 50);
             this.buttonForward.TabIndex = 7;
             this.buttonForward.Text = "forward";
             this.buttonForward.UseVisualStyleBackColor = true;
@@ -114,19 +118,62 @@
             // 
             // buttonStop
             // 
-            this.buttonStop.Location = new System.Drawing.Point(1090, 606);
+            this.buttonStop.Location = new System.Drawing.Point(1259, 539);
             this.buttonStop.Name = "buttonStop";
-            this.buttonStop.Size = new System.Drawing.Size(143, 52);
+            this.buttonStop.Size = new System.Drawing.Size(150, 50);
             this.buttonStop.TabIndex = 8;
             this.buttonStop.Text = "stop";
             this.buttonStop.UseVisualStyleBackColor = true;
             this.buttonStop.Click += new System.EventHandler(this.buttonStop_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(0, 0);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 9;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // buttonBackward
+            // 
+            this.buttonBackward.Location = new System.Drawing.Point(1259, 635);
+            this.buttonBackward.Name = "buttonBackward";
+            this.buttonBackward.Size = new System.Drawing.Size(150, 50);
+            this.buttonBackward.TabIndex = 10;
+            this.buttonBackward.Text = "backward";
+            this.buttonBackward.UseVisualStyleBackColor = true;
+            this.buttonBackward.Click += new System.EventHandler(this.buttonBackward_Click);
+            // 
+            // buttonLeft
+            // 
+            this.buttonLeft.Location = new System.Drawing.Point(1090, 539);
+            this.buttonLeft.Name = "buttonLeft";
+            this.buttonLeft.Size = new System.Drawing.Size(150, 50);
+            this.buttonLeft.TabIndex = 11;
+            this.buttonLeft.Text = "left";
+            this.buttonLeft.UseVisualStyleBackColor = true;
+            this.buttonLeft.Click += new System.EventHandler(this.buttonLeft_Click);
+            // 
+            // buttonRight
+            // 
+            this.buttonRight.Location = new System.Drawing.Point(1453, 539);
+            this.buttonRight.Name = "buttonRight";
+            this.buttonRight.Size = new System.Drawing.Size(150, 50);
+            this.buttonRight.TabIndex = 12;
+            this.buttonRight.Text = "right";
+            this.buttonRight.UseVisualStyleBackColor = true;
+            this.buttonRight.Click += new System.EventHandler(this.buttonRight_Click);
             // 
             // FormTCPClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1703, 775);
+            this.Controls.Add(this.buttonRight);
+            this.Controls.Add(this.buttonLeft);
+            this.Controls.Add(this.buttonBackward);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.buttonStop);
             this.Controls.Add(this.buttonForward);
             this.Controls.Add(this.tbMessage);
@@ -155,6 +202,10 @@
         private System.Windows.Forms.TextBox tbMessage;
         private System.Windows.Forms.Button buttonForward;
         private System.Windows.Forms.Button buttonStop;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonBackward;
+        private System.Windows.Forms.Button buttonLeft;
+        private System.Windows.Forms.Button buttonRight;
     }
 }
 
