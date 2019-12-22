@@ -11,5 +11,7 @@ namespace Dto
         public int x { get; set; }
         public int y { get; set;}
         public int z { get; set; }
+        public int ol { get; set; }
+        public int or { get; set; }
     }
 }
